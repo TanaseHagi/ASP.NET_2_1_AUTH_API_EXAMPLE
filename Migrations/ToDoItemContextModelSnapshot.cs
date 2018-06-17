@@ -2,16 +2,14 @@
 using ASP.NET_2_1_AUTH_API_EXAMPLE.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ASP.NET_2_1_AUTH_API_EXAMPLE.Migrations
 {
-    [DbContext(typeof(ToDoContext))]
-    [Migration("20180617085222_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(ToDoItemContext))]
+    partial class ToDoItemContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
