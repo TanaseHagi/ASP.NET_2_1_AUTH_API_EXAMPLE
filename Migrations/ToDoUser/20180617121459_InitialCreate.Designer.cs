@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP.NET_2_1_AUTH_API_EXAMPLE.Migrations.ToDoUser
 {
     [DbContext(typeof(ToDoUserContext))]
-    [Migration("20180617093629_InitialCreate")]
+    [Migration("20180617121459_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
