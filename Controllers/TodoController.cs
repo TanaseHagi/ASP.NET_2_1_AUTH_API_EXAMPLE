@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ASP.NET_2_1_AUTH_API_EXAMPLE.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -9,6 +10,7 @@ namespace ASP.NET_2_1_AUTH_API_EXAMPLE.Controllers
     [RequireHttps]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TodoController : ControllerBase
     {
         private readonly ToDoItemContext _context;
